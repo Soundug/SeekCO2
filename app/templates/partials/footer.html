@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+            "width=device-width, initial-scale=1.0">
+    <title>
+        Find your carbon footprint
+    </title>
+
+    <style>
+
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #05c46b;
+            font-family: Verdana,sans-serif;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Create Form -->
+<form id="form">
+
+    <!-- Details -->
+
+    <div class="form-control">
+        <label>
+            What best describes your diet?
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="r1">
+            <input type="radio"
+                   id="r1"
+                   name="recommed">Meat in every meal</input>
+        </label>
+        <label for="r2">
+            <input type="radio"
+                   id="r2"
+                   name="recommed">Meat very rarely</input>
+        </label>
+        <label for="r3">
+            <input type="radio"
+                   id="r3"
+                   name="recommed">Vegetarian</input>
+        </label>
+        <label for="r4">
+            <input type="radio"
+                   id="r4"
+                   name="recommed">Vegan</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            In a week, how much do you spend on food from restaurants and home delivery?
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="recommed-1">
+            <input type="radio"
+                   id="recommed-1"
+                   name="recommed">Rs. 0</input>
+        </label>
+        <label for="recommed-2">
+            <input type="radio"
+                   id="recommed-2"
+                   name="recommed">Rs. 100 - Rs 1000</input>
+        </label>
+        <label for="recommed-3">
+            <input type="radio"
+                   id="recommed-3"
+                   name="recommed">Rs. 100 - Rs 1000</input>
+        </label>
+        <label for="recommed-4">
+            <input type="radio"
+                   id="recommed-4"
+                   name="recommed">Rs. 1000 - Rs 5000</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>Of the food you buy how much is wasted and thrown away?
+        </label>
+        <!-- Input Type Checkbox -->
+        <label for="inp-1">
+            <input type="radio"
+                   name="inp">None</input></label>
+        <label for="inp-2">
+            <input type="radio"
+                   name="inp">0%-10%</input></label>
+        <label for="inp-3">
+            <input type="radio"
+                   name="inp">10%-30%</input></label>
+        <label for="inp-4">
+            <input type="radio"
+                   name="inp">More than 30%</input></label>
+    </div>
+
+    <div class="form-control">
+        <label for="comment">
+            What kind of vehicle do you travel in most often as driver or passenger? (if any)
+        </label>
+
+        <label for="inp-1">
+            <input type="radio"
+                   name="inp">Car</input></label>
+        <label for="inp-2">
+            <input type="radio"
+                   name="inp">Bike</input></label>
+        <label for="inp-3">
+            <input type="radio"
+                   name="inp">Public transport, walking, cycling</input></label>
+    </div>
+
+    <div class="form-control">
+        <label for="comment">
+            How many hours a week do you spend on the train for personal use including commuting?
+        </label>
+
+        <label for="inp-1">
+            <input type="radio"
+                   name="inp">Under 2 hrs</input></label>
+        <label for="inp-2">
+            <input type="radio"
+                   name="inp">2 to 5 hrs</input></label>
+        <label for="inp-3">
+            <input type="radio"
+                   name="inp">5 to 15 hrs</input></label>
+        <label for="inp-4">
+            <input type="radio"
+                    name="inp">More than 15 hrs</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label for="comment">
+            How many hours a week do you spend on the bus for personal use including commuting?
+        </label>
+
+        <label for="inp-1">
+            <input type="radio"
+                   name="inp">Under 2 hrs</input></label>
+        <label for="inp-2">
+            <input type="radio"
+                   name="inp">2 to 6 hrs</input></label>
+        <label for="inp-3">
+            <input type="radio"
+                   name="inp">6 to 10 hrs</input></label>
+        <label for="inp-4">
+            <input type="radio"
+                   name="inp">More than 10 hrs</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label for="comment">
+            What kind of house do you live in?
+        </label>
+
+        <label for="inp-1">
+            <input type="radio"
+                   name="inp">Flat</input></label>
+        <label for="inp-2">
+            <input type="radio"
+                   name="inp">Bungalow</input></label>
+        <label for="inp-3">
+            <input type="radio"
+                   name="inp">Terrace</input></label>
+    </div>
+
+    <div class="form-control">
+        <label for="comment">
+            How many bedrooms does your house have?
+        </label>
+        <label for="inp-1">
+            <input type="radio"
+                   name="inp">1</input></label>
+        <label for="inp-2">
+            <input type="radio"
+                   name="inp">2</input></label>
+        <label for="inp-3">
+            <input type="radio"
+                   name="inp">3</input></label>
+        <label for="inp-4">
+            <input type="radio"
+                   name="inp">4 or more</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label for="comment">
+            How many people (aged 17 and over) live in your house?
+        </label>
+
+        <label for="inp-1">
+            <input type="radio"
+                   name="inp">1</input></label>
+        <label for="inp-2">
+            <input type="radio"
+                   name="inp">2</input></label>
+        <label for="inp-3">
+            <input type="radio"
+                   name="inp">3</input></label>
+        <label for="inp-4">
+            <input type="radio"
+                   name="inp">4 or more</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label for="comment">
+            Do you regularly turn off lights and not leave your appliances on standby?
+        </label>
+
+        <label for="inp-1">
+            <input type="radio"
+                   name="inp">Yes</input></label>
+        <label for="inp-2">
+            <input type="radio"
+                   name="inp">No</input></label>
+    </div>
+
+    <div class="form-control">
+        <label for="comment">
+            Which of these home energy efficiency improvements are installed in your home?
+        </label>
+
+        <label for="inp-1">
+            <input type="radio"
+                   name="inp">Solar heaters</input></label>
+        <label for="inp-2">
+            <input type="radio"
+                   name="inp">Low watt led bulbs</input></label>
+        <label for="inp-3">
+            <input type="radio"
+                   name="inp">Solar panels</input></label>
+    </div>
+
+    <div class="form-control">
+        <label for="comment">
+            Which of these types of waste do you recycle and/or compost?
+        </label>
+
+        <label for="inp-1">
+            <input type="checkbox"
+                   name="inp">Food</input></label>
+        <label for="inp-2">
+            <input type="checkbox"
+                   name="inp">Clothes</input></label>
+        <label for="inp-3">
+            <input type="checkbox"
+                   name="inp">Paper</input></label>
+        <label for="inp-4">
+            <input type="checkbox"
+                   name="inp">Plastic cups, bottles</input></label>
+        <label for="inp-5">
+            <input type="checkbox"
+                   name="inp">Glass</input></label>
+
+    </div>
+
+    <!-- Multi-line Text Input Control -->
+    <button type="submit" value="submit">
+        Submit
+    </button>
+</form>
+</body>
+
+</html>
